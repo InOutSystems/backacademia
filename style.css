@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #d9d9d9;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 900px;
+  background: #f2f2f2;
+}
+
+.header {
+  background: #cfcfcf;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background: #eee;
+  border-radius: 50%;
+}
+
+.menu {
+  background: #bdbdbd;
+  padding: 10px 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.conteudo {
+  text-align: center;
+  padding: 30px;
+}
+
+input {
+  width: 60%;
+  padding: 10px;
+  background: #d3d3d3;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.entrada {
+  background: green;
+}
+
+.saida {
+  background: red;
+}
+
+.linha {
+  height: 2px;
+  background: #aaa;
+  margin: 20px 0;
+}
+
+.item {
+  background: #ccc;
+  margin: 10px auto;
+  width: 80%;
+  padding: 10px;
+}

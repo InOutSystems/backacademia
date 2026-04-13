@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>InOutSystems</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <div class="logo"></div>
+        <div>InOutSystems</div>
+    </div>
+
+    <div class="menu">
+        <span>Dashboard</span>
+        <span>Entradas</span>
+        <span>Saídas</span>
+        <span>Relatórios</span>
+    </div>
+
+    <div class="conteudo">
+        <h1>CONTROLE DE ACESSO</h1>
+
+        <input id="input" type="text" placeholder="Nome | ID | CPF">
+
+        <div class="botoes">
+            <button onclick="registrar('entrada')" class="entrada">
+                Registrar entrada
+            </button>
+
+            <button onclick="registrar('saida')" class="saida">
+                Registrar saída
+            </button>
+        </div>
+
+        <div class="linha"></div>
+
+        <h2>ÚLTIMOS REGISTROS</h2>
+
+        <div id="lista">
+            @foreach($registros as $registro)
+                <div class="item">
+                    {{ $registro->nome }} - {{ $registro->tipo }} - {{ $registro->hora }}
+                </div>
+            @endforeach
+        </div>
+    </div>
+
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
